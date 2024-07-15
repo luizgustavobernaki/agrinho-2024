@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agrinho: Do Campo à Cidade, Colhendo Oportunidades</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <!--começo cabeçalho visual do site-->
+      <div class="cabecalho img">
+        <img class="logo__principal" src="img/logo.png" alt="Logo" />
+        <h1 class="texto__cabecalho">
+          Do agro para a cidade
+        </h1>
+        <h2 class="subtitulo__cabecalho">
+          As parcerias entre fazendas, mercados e escolas
+        </h2>
+      </div>
+    </header>
+    
+
+    <section class="container">
+      <div class="secao1__descricao">
+        <p class="secao1__titulo">Sobre o Agrinho</p>
+        <p class="secao1__texto">
+          O Agrinho é uma iniciativa que visa conectar agricultores, escolas e mercados, promovendo parcerias que geram benefícios para todos. Aqui você encontra informações sobre como essas colaborações podem trazer ganhos financeiros, melhorar a saúde e educar sobre a agricultura sustentável.
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="secao2__descricao">
+        <p class="secao2__titulo">Parcerias Sustentáveis</p>
+        <p class="secao2__texto">
+          As parcerias entre fazendas, mercados e escolas trazem alimentos frescos e saudáveis para a cidade, ao mesmo tempo que proporcionam uma fonte de renda sustentável para os agricultores. Conheça mais sobre como essas iniciativas ajudam a reduzir desperdícios e promover uma alimentação mais saudável.
+        </p>
+      </div>
+      <img src="img/criancas2.jpeg" alt="Parceria entre campo e cidade" class="secao2__imagem"/>
+    </section>
+
+    <section>
+      <div class="secao3__titulo">
+        <p class="secao3__img__titulo">Benefícios para a Saúde</p>
+      </div>
+      <div class="secao3__subtitulo">
+        <h2 class="secao3__img__subtitulo">
+          Os alimentos frescos e naturais são ricos em nutrientes e ajudam a prevenir doenças crônicas. Descubra como uma alimentação equilibrada pode melhorar sua qualidade de vida.
+        </h2>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="secao4__imagem img">
+        <div class="secao4__texto">
+          <h1 class="secao4__info">
+            Cultive sua própria horta! Seja na escola, em casa ou apartamento, aprenda como criar uma horta que fornecerá alimentos frescos e saudáveis.
+          </h1>
+        </div>
+      </div>
+    </section>
+
+ 
+    <button id="botao__inicio" onclick="scrollToTop()">Voltar ao Topo</button>
+    <section class="container secao-mensagem">
+      <h2 class="secao-mensagem__titulo">Envie uma Mensagem</h2>
+      <form class="form-mensagem">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer class="rodape">
+      <img src="img/Agrinho24.png" alt="Agrinho" class="rodape__logo" />
+      <ul class="rodape__lista">
+        <li class="lista__link"><a href="https://www.nre.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=53"><img class="img__links" src="img/nrei.png" alt="Nucleo de ivaiporã" ></a></li>
+        <li class="lista__link"><a href="https://www.instagram.com/ccm.anita.garibaldi?igsh=MXdvbWN3cGtibjl3Mw=="><img  class="img__links" src="img/ccm.png" alt="Logo Colegio CCM Anita Garibaldi" ></a></li>
+        <li class="lista__link"><a href="https://github.com/luizgustavobernaki/"><img class="img__links" src="img/githubH.png" alt="Repositorio Hector" ></a></li>
+      </ul>
+      <div class="contador-wrapper">
+        <div class="contador">
+          <h3 class="contador__titulo">Tempo para a Premiação do Agrinho</h3>
+          <div class="contador-digito">
+            <p class="contador-digito-numero" id="dias">0</p>
+            <p class="contador-digito-texto">dias</p>
+          </div>
+          <div class="contador-digito">
+            <p class="contador-digito-numero" id="horas">0</p>
+            <p class="contador-digito-texto">horas</p>
+          </div>
+          <div class="contador-digito">
+            <p class="contador-digito-numero" id="min">0</p>
+            <p class="contador-digito-texto">min</p>
+          </div>
+          <div class="contador-digito">
+            <p class="contador-digito-numero" id="seg">0</p>
+            <p class="contador-digito-texto">seg</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
