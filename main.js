@@ -44,3 +44,22 @@ window.onscroll = function() {
     backToTopButton.style.display = 'none';
   }
 };
+
+//carrossel//
+
+const imgs = document.getElementById("imagem");
+const imagem = document.querySelectorAll("#imagem imagem");
+
+let idx = 0;
+
+function carrossel(){
+  idx++;
+
+  if(idx > imagem.length - 1){
+    idx = 0;
+  }
+
+  imgs.style.transform = 'translateX(${-idx * 750}px)';
+}
+
+setInterval(carrossel, 1800);
