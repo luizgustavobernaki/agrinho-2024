@@ -46,20 +46,17 @@ window.onscroll = function() {
 };
 
 //carrossel//
+ let count = 1;
+ document.getElementById("radio1").checked = true;
 
-const imgs = document.getElementById("imagem");
-const imagem = document.querySelectorAll("#imagem imagem");
+ setInterval( function(){
+ nextImage();
+ },2000)
 
-let idx = 0;
-
-function carrossel(){
-  idx++;
-
-  if(idx > imagem.length - 1){
-    idx = 0;
+ function nextImage(){
+  count++;
+  if(count>4){
+    count = 1;
   }
-
-  imgs.style.transform = 'translateX(${-idx * 750}px)';
-}
-
-setInterval(carrossel, 1800);
+  document.getElementById("radio"+count).checked = true;
+ }

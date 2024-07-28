@@ -5,11 +5,11 @@
 }
 /* setup das variaveis*/
 :root {
-  --verde-fundo: #e7f3e9;
+  --verde-fundo: #90e99f5e;
   --branco-principal: #ffffff;
   --fonte-principal: "Lustria";
-  --verde-principal: #4caf50;
-  --marrom-principal: #795548;
+  --verde-principal: #287b2a;
+  --marrom-principal: #513125;
   --azul-principal: #2196f3;
   --azul-rodape: #336699;
   --link: #0a4804;
@@ -50,7 +50,7 @@ a:active {
 
 /*estilos do cabeçalho*/
 .cabecalho {
-  background-image: url("img/campo.jpeg");
+  background-image: url("img/cabecalho.jpeg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -63,11 +63,13 @@ a:active {
   font-size: 3em;
   font-weight: 700;
   color: var(--branco-principal);
+  background: rgba(10, 87, 19, 0.596);
 }
 .subtitulo__cabecalho {
   font-size: 1.5em;
   color: var(--branco-principal);
   margin-bottom: 20px;
+  background: rgba(10, 87, 19, 0.596);
 }
 
 /* estilo seção 1*/
@@ -90,7 +92,6 @@ a:active {
 
 /* estilo seção 2*/
 .secao2__descricao {
-  width: 60%;
   text-align: center;
   padding: 20px;
 }
@@ -102,53 +103,136 @@ a:active {
 }
 .secao2__texto {
   margin-top: 20px;
+  margin-bottom: 1.5em;
   font-size: 1.25em;
   line-height: 1.6;
   color: var(--marrom-principal);
 }
 .secao2__imagem {
-  width: 60%;
-  margin-top: 20px;
+  width: 700px;
+  height: 500px;
+  justify-content: center;
+  margin: auto;
 }
+
+.secao2__subtitulo{
+  margin-top: 20px;
+  font-size: 1.25em;
+  line-height: 1.6;
+  color: var(--marrom-principal);
+}
+
 /*carrossel*/
 
 .carrossel-titulo{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-weight: 700;
   font-size: 2.5em;
   color: var(--verde-principal);
-  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
-.carrossel-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  min-height: 100vh;
-  
-}
-
-.carrossel{ 
-  box-shadow: 2px 2px 4px var(--verde-fundo);
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
   overflow: hidden;
-  height: 750px;
-  width: 750px;
 }
 
-.container{
+.slides{
+  width: 400%;
+  height: 400px;
   display: flex;
-  transition: transform 0.5s ease-in-out ;
-  transform: translateX(0);
 }
 
-.imagem{
-  object-fit: cover;
-  height: 750px;
-  width: 750px;
-  background-size: cover;
-  background-position: center;
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #FFF;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+
+.navigation-auto div{
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #FFF;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #FFF;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #FFF;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: #FFF;
 }
 
 /*carrossel*/
@@ -176,13 +260,13 @@ a:active {
 .secao3__imagem{
   text-align: center;
   margin: auto;
-  height: 800px;
+  height: 500px;
   width: 800px;
 }
 
 /* estilo seção 4*/
 .secao4__imagem {
-  background-image: url("img/plantaas.jpeg");
+  background-image: url("img/folhagens.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -255,7 +339,7 @@ a:active {
 /* estilo do rodape */
 .rodape {
   position: relative;
-  background-color: var(--azul-rodape);
+  background-color: var(--link);
   color: var(--branco-principal);
   padding: 20px;
   display: flex;

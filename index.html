@@ -1,131 +1,211 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Agrinho: Do Campo à Cidade, Colhendo Oportunidades</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="stilo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet"/>
-  </head>
-  <body>
-    <header>
-      <!--começo cabeçalho visual do site-->
-      <div class="cabecalho img">
-        <img class="logo__principal" src="img/logo.png" alt="Logo" />
-        <h1 class="texto__cabecalho">
-          Do agro para a cidade
+
+<head>
+  <title>Agrinho: Alimente a vida</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="stilo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!--começo cabeçalho visual do site-->
+    <div class="cabecalho img">
+      <img class="logo__principal" src="img/logo.png" alt="Logo" />
+      <h1 class="texto__cabecalho">
+        Alimentos Orgânicos
+      </h1>
+      <h2 class="subtitulo__cabecalho">
+        Benefícios de consumi-los em seu dia a dia
+      </h2>
+    </div>
+  </header>
+
+
+  <section class="container">
+    <div class="secao1__descricao">
+      <p class="secao1__titulo">Você sabe o que são alimentos orgânicos? </p>
+      <p class="secao1__texto">
+        Se entende por alimento orgânico aqueles alimentos que são cultivados em um sistema que não há utiliza de
+        agrotóxicos. Sem agrotóxicos, esses alimentos se tornam mais enriquecidos em nutrientes e todo o seu processo de
+        cultivo se torna mais sustentável e ecológico. Atualmente, grande parte dos alimentos orgânicos são,
+        majoritariamente, produzidos por pequenos produtores rurais.
+      </p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="secao2__descricao">
+      <p class="secao2__titulo">Vantagens em consumir alimentos orgânicos</p>
+      <p class="secao2__texto">
+        Os alimentos orgânicos são indispensáveis para uma vida mais saudável e são inerentes quando o assunto é cultivo
+        sustentável, sendo assim, você já imaginou todo o impacto que esses alimentos geram no planeta? Podemos
+        encontrar vantagens ao consumir alimentos orgânicos em diversos âmbitos, sendo os principais a saúde, a
+        preservação ambiental e a economia local.
+      </p>
+      <div class="secao2__imagem">
+        <img class="secao2__imagem" src="img/cesta.jpeg" alt="Cesta com alimentos orgãnicos.">
+      </div>
+      <div class="secap2__subtitulo">
+        <p class="secao2__subtitulo"> Ao consumir esses alimentos, estamos automaticamente cuidando da nossa saúde, já
+          que esses alimentos são produzidos de maneira natural, sem o uso de agrotóxicos. Assim, uma refeição preparada
+          com produtos orgânicos pode prevenir doenças, aumentar a imunidade, trazer mais disposição no dia a dia e
+          prevenir doenças crônicas. </p>
+        <p class="secao2__subtitulo"> Os alimentos orgânicos são produzidos em pequenas propriedades rurais, normalmente
+          cultivados por famílias locais, assim o processo de cultivo não demanda de grandes maquinários ou pesticidas.
+          Isso contribui para a preservação da biodiversidade local, evitando a contaminação de rios e nascentes, a
+          contaminação do solo por derramamento de resíduos e combustíveis e descartando a necessidade de desmatar, já
+          que a produção é feita em tamanho reduzido e prezando pela qualidade. </p>
+        <p class="secao2__subtitulo"> O impacto econômico é notável, sempre que você compra um alimento orgânico, além
+          de estar contribuindo pra uma produção ecológica e sustentável, você estará garantido que esses alimentos
+          continuem sendo produzidos, já que muitas vezes, essa é a única fonte de renda dos produtores. Isso gera renda
+          no campo que é convertida em qualidade nos produtos cultivados. </p>
+      </div>
+    </div>
+  </section>
+
+  <!--carrossel-->
+
+  <p class="carrossel-titulo">
+    Vantagens de alguns alimentos orgânicos em sua alimentção
+  </p>
+
+  <div class="slider">
+
+    <div class="slides">
+      <!--Radio Buttons-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!--Fim Radio Buttons-->
+
+      <!--Slide Images-->
+      <div class="slide first">
+        <img src="img/img1.png" alt="Vantagens de consumir bananas">
+      </div>
+
+      <div class="slide">
+        <img src="img/img2.png" alt="Vantagens de consumir maças">
+      </div>
+
+      <div class="slide">
+        <img src="img/img3.png" alt="Vantagens de consumir alface">
+      </div>
+
+      <div class="slide">
+        <img src="img/img4.png" alt="Vantagens de consumir tomates">
+      </div>
+      <!-- Fim Slide Images-->
+
+      <!--Navigation auto-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+
+    </div>
+
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      
+    </div>
+
+  </div>
+
+
+  <!--carrossel-->
+  <section>
+    <div class="secao3__titulo">
+      <p class="secao3__img__titulo">Aprenda a cultivar em casa!</p>
+    </div>
+    <div class="secao3__subtitulo">
+      <p class="secao3__img__subtitulo">
+        Uma boa notícia é que você não precisa se deslocar para adquirir alimentos orgânicos. É totalmente possível produzir esses alimentos em sua própria casa e desfrutar de todos esses benefícios.
+      </p>
+      <p class="secao3__img__subtitulo">
+        Independente do seu estilo de moradia (casa ou apartamento) procure um local com alta ventilação e que tenha acesso a luz do sol conforme a necessidade da espécie que deseja cultivar. Caso você more um uma casa, é interessante a criação de uma horta no nível do solo, porém, se você não dispõe de um amplo espaço ao nível do solo ou mora em um apartamento, é interessante a implementação de uma horta vertical, com canteiros dispostos em uma parede pendentes ao teto. 
+      </p>
+      <p class="secao3__img__subtitulo">
+        É importante analisar e estudar quais espécies se adaptariam com mais facilidade ao clima e condições de sua residência, caso você não leve isso em consideração, pode implicar na baixa produtividade da espécie ou até na não germinação. É importante que os canteiros tenham manutenção periódica com adubo, isso garante um solo rico em vitaminas e nutrientes, o que reflete diretamente no sabor e produtividade das espécies. Tenha precaução com os cuidados diários, cultivar em casa demanda uma rotina de cuidados, como a frequência de irrigação e com as horas de exposição ao sol que cada espécie demanda. 
+      </p>
+      <p class="secao3__img__subtitulo">
+        Levando todos esses cuidados e hábitos, é possível produzir alimentos orgânicos no conforto da sua casa! 
+      </p>
+    </div>
+    <div class="secao3__imagem">
+      <img src="img/horta.jpeg" alt="Imagem de cultivo de alimentos orgânicos em casa." class="secao3__imagem" />
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="secao4__imagem img">
+      <div class="secao4__texto">
+        <h1 class="secao4__info">
+          Os alimentos orgânicos unem o útil ao agradável. Tenha mais saúde e sabor ao mesmo tempo que incentiva o pequeno produtor local!
         </h1>
-        <h2 class="subtitulo__cabecalho">
-          As parcerias entre fazendas, mercados e escolas
-        </h2>
-      </div>
-    </header>
-    
-
-    <section class="container">
-      <div class="secao1__descricao">
-        <p class="secao1__titulo">Sobre o Agrinho</p>
-        <p class="secao1__texto">
-          O Agrinho é uma iniciativa que visa conectar agricultores, escolas e mercados, promovendo parcerias que geram benefícios para todos. Aqui você encontra informações sobre como essas colaborações podem trazer ganhos financeiros, melhorar a saúde e educar sobre a agricultura sustentável.
-        </p>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="secao2__descricao">
-        <p class="secao2__titulo">Parcerias Sustentáveis</p>
-        <p class="secao2__texto">
-          Recentemente, o planeta Terra ultrapassou a marca de 8 bilhões de habitantes segundo dados da <a href="https://www.unfpa.org/">UNFPA</a>. Sendo assim, com o crescimento da população mundial, desafios socioeconômicos para manter um padrão de alimentação saudável e acessível para todos os setores da sociedade são enfrentados. Sendo assim, podemos analisar todas as vantagens que parcerias entre escolas, mercados e pequenos produtores rurais podem proporcionar para amenizar a problemática.
-        </p>
-      </div>
-    </section>
-
-    <!--carrossel-->
-    <p class="carrossel-titulo">Algumas vantagens dessas parcerias</p>
-  <section class="carrossel-body">
-    <div class="carrossel">
-      <div class="container" id="imagem">
-        <img src="img/img1.png" alt="primeira imagem">
-        <img src="img/img2.png" alt="segunda imagem">
-        <img src="img/img3.png" alt="terceira imagem">
-        <img src="img/img4.png" alt="quarta imagem">
       </div>
     </div>
-</section>
+  </section>
 
-    <!--carrossel-->
 
-    <section>
-      <div class="secao3__titulo">
-        <p class="secao3__img__titulo">Benefícios para a Saúde</p>
+  <button id="botao__inicio" onclick="scrollToTop()">Voltar ao Topo</button>
+  <section class="container secao-mensagem">
+    <h2 class="secao-mensagem__titulo">Envie uma Mensagem</h2>
+    <form class="form-mensagem">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="rodape">
+    <img src="img/Agrinho24.png" alt="Agrinho" class="rodape__logo" />
+    <ul class="rodape__lista">
+      <li class="lista__link"><a href="https://www.nre.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=53"><img
+            class="img__links" src="img/nrei.png" alt="Nucleo de ivaiporã"></a></li>
+      <li class="lista__link"><a href="https://www.instagram.com/ccm.anita.garibaldi?igsh=MXdvbWN3cGtibjl3Mw=="><img
+            class="img__links" src="img/ccm.png" alt="Logo Colegio CCM Anita Garibaldi"></a></li>
+      <li class="lista__link"><a href="https://github.com/luizgustavobernaki/"><img class="img__links"
+            src="img/githubH.png" alt="Repositorio Hector"></a></li>
+    </ul>
+    <div class="contador-wrapper">
+      <div class="contador">
+        <h3 class="contador__titulo">Tempo para a Premiação do Agrinho</h3>
+        <div class="contador-digito">
+          <p class="contador-digito-numero" id="dias">0</p>
+          <p class="contador-digito-texto">dias</p>
+        </div>
+        <div class="contador-digito">
+          <p class="contador-digito-numero" id="horas">0</p>
+          <p class="contador-digito-texto">horas</p>
+        </div>
+        <div class="contador-digito">
+          <p class="contador-digito-numero" id="min">0</p>
+          <p class="contador-digito-texto">min</p>
+        </div>
+        <div class="contador-digito">
+          <p class="contador-digito-numero" id="seg">0</p>
+          <p class="contador-digito-texto">seg</p>
+        </div>
       </div>
-      <div class="secao3__subtitulo">
-        <h2 class="secao3__img__subtitulo">
-          Com as refeições sendo preparadas com os alimentos provenientes dessas colaborações, é possível obter refeições saudáveis e ricas em nutrientes, já que tais alimentos são produzidos de forma orgânica e livre de agrotóxicos. Com uma alimentação saudável, é possível desfrutar de uma vida mais produtiva e de qualidade, aumentando sua imunidade e ajudando a prevenir doenças crônicas.
-        </h2>
-      </div>
-      <div class="secao3__imagem">
-      <img src="img/criancas2.jpeg" alt="Parceria entre campo e cidade" class="secao3__imagem"/>
     </div>
-    </section>
+  </footer>
 
-    <section class="container">
-      <div class="secao4__imagem img">
-        <div class="secao4__texto">
-          <h1 class="secao4__info">
-            Cultive sua própria horta! Seja na escola, em casa ou apartamento, aprenda como criar uma horta que fornecerá alimentos frescos e saudáveis.
-          </h1>
-        </div>
-      </div>
-    </section>
+  <script src="main.js"></script>
+</body>
 
- 
-    <button id="botao__inicio" onclick="scrollToTop()">Voltar ao Topo</button>
-    <section class="container secao-mensagem">
-      <h2 class="secao-mensagem__titulo">Envie uma Mensagem</h2>
-      <form class="form-mensagem">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-
-    <footer class="rodape">
-      <img src="img/Agrinho24.png" alt="Agrinho" class="rodape__logo" />
-      <ul class="rodape__lista">
-        <li class="lista__link"><a href="https://www.nre.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=53"><img class="img__links" src="img/nrei.png" alt="Nucleo de ivaiporã" ></a></li>
-        <li class="lista__link"><a href="https://www.instagram.com/ccm.anita.garibaldi?igsh=MXdvbWN3cGtibjl3Mw=="><img  class="img__links" src="img/ccm.png" alt="Logo Colegio CCM Anita Garibaldi" ></a></li>
-        <li class="lista__link"><a href="https://github.com/luizgustavobernaki/"><img class="img__links" src="img/githubH.png" alt="Repositorio Hector" ></a></li>
-      </ul>
-      <div class="contador-wrapper">
-        <div class="contador">
-          <h3 class="contador__titulo">Tempo para a Premiação do Agrinho</h3>
-          <div class="contador-digito">
-            <p class="contador-digito-numero" id="dias">0</p>
-            <p class="contador-digito-texto">dias</p>
-          </div>
-          <div class="contador-digito">
-            <p class="contador-digito-numero" id="horas">0</p>
-            <p class="contador-digito-texto">horas</p>
-          </div>
-          <div class="contador-digito">
-            <p class="contador-digito-numero" id="min">0</p>
-            <p class="contador-digito-texto">min</p>
-          </div>
-          <div class="contador-digito">
-            <p class="contador-digito-numero" id="seg">0</p>
-            <p class="contador-digito-texto">seg</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-    <script src="main.js"></script>
-  </body>
 </html>
